@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const { saveNewContact } = require('./api')
+const { saveNewContact } = require('./src/api')
 
 const app = express()
 
@@ -44,6 +44,4 @@ app.post('/add-contact', (req, res) => {
     })
 })
 
-app.listen(3006, function () {
-  console.log('Listening on port 3006!')
-})
+app.listen()
